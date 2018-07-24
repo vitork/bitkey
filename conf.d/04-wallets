@@ -6,14 +6,6 @@ SRC=/usr/local/src
 
 cd $SRC
 
-# unpack Electron Cash
-tar -zxf Electron*.tar.gz
-rm Electron*.tar.gz
-
-# install Electron Cash
-mv Electron*/ $SHARE/electron-cash/
-sudo ln -s $SHARE/electron-cash/electron-cash /usr/local/bin/electron-cash
-sudo chmod +x /usr/local/bin/electron-cash
 
 # unpack electrum-LTC
 tar -zxf Electrum-LTC-*.tar.gz
@@ -23,6 +15,7 @@ rm Electrum-LTC-*.tar.gz
 mv Electrum-LTC-*/ $SHARE/electrum-ltc/
 sudo ln -s $SHARE/electrum-ltc/electrum-ltc /usr/local/bin/electrum-ltc
 sudo chmod +x /usr/local/bin/electrum-ltc
+
 
 # unpack electrum-dash
 tar -zxf Electrum-DASH-*.tar.gz
@@ -36,6 +29,7 @@ pyrcc4 $SHARE/electrum-dash/icons.qrc -o $SHARE/electrum-dash/gui/qt/icons_rc.py
 #sudo python $SHARE/electrum-dash/setup.py install
 sudo ln -s $SHARE/electrum-dash/electrum-dash /usr/local/bin/electrum-dash
 sudo chmod +x /usr/local/bin/electrum-dash
+
 
 # install electrum dependency python-typing
 tar -zxf typing-*.tar.gz
@@ -54,32 +48,7 @@ mv Electrum-*/ $SHARE/electrum/
 sudo ln -s $SHARE/electrum/electrum /usr/local/bin/electrum
 sudo chmod +x /usr/local/bin/electrum
 
+
 # install electrum-dash dependencies
 #mkdir $SHARE/electrum-dash/packages/
-/bin/cp $SHARE/electrum/packages/* $SHARE/electrum-dash/packages/ -R  
-
-# unpack Exodus
-unzip exodus-*.zip -d .
-rm exodus-*.zip
-
-# install Exodus
-mv Exodus*/ $LIB/exodus/
-sudo ln -s $LIB/exodus/Exodus /usr/local/bin/exodus
-sudo chmod +x /usr/local/bin/exodus
-
-# unpack CryptoSeed
-unzip CryptoSeed*.zip
-rm CryptoSeed*.zip
-
-# install CryptoSeed
-mv CryptoSeed*/ $LIB/cryptoseed/
-sudo ln -s $LIB/cryptoseed/cryptoseed /usr/local/bin/cryptoseed
-sudo chmod +x /usr/local/bin/cryptoseed
-
-# install keepassxc
-sudo dpkg -i keepassxc*.deb
-rm keepassxc*.deb
-
-# install armory
-sudo dpkg -i armory*.deb
-rm armory*.deb
+/bin/cp $SHARE/electrum/packages/* $SHARE/electrum-dash/packages/ -R

@@ -7,30 +7,23 @@ thunar-volman
 gvfs
 eject
 
-python-setuptools       /* electrum: installation */
-python3-setuptools		/* electrum: installation */
-python-sip              /* electrum: virtual package providing sip-api-8.1 */
-python-qt4              /* electrum: qt gui interface */
-python3-pyqt5			/* electrum: qt gui interface */
-pyqt4-dev-tools			/* electrum: compile icons */
-pyqt5-dev-tools			/* electrum: compile icons */
-patch                   /* electrum: apply patches */
-libusb-1.0-0-dev		/* electrum-dash */
+python-setuptools    /* electrum: installation */
+python3-setuptools   /* electrum: installation */
+python-sip           /* electrum: virtual package providing sip-api-8.1 */
+python-qt4           /* electrum: qt gui interface */
+python3-pyqt5        /* electrum: qt gui interface */
+pyqt4-dev-tools      /* electrum: compile icons */
+pyqt5-dev-tools      /* electrum: compile icons */
+patch                /* electrum: apply patches */
+libusb-1.0-0-dev     /* electrum-dash */
 
-cheese					/* required for webcam */
-qtqr					/* QR code scanner for webcam */
-zbar-tools				/* QR utilities */
+cheese      /* required for webcam */
+qtqr        /* QR code scanner for webcam */
+zbar-tools  /* QR utilities */
 
-p7zip-full              /* as per feature request #11 */
+p7zip-full  /* as per feature request #11 */
 
 secure-delete
 
-florence                /* onscreen keyboard */
-at-spi2-core            /* required for florence */
-
-keepassx				/* as per feature request #52 */
-libqt5x11extras5		/* dependency for keepassxc */
-libykpers-1-1			/* dependency for keepassxc */
-
-python-psutil			/* dependency for armory */
-libstdc++6			/* dependency for armory */
+florence      /* onscreen keyboard */
+at-spi2-core  /* required for florence */
